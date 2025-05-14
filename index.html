@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Video Testimonial Recorder</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" href="Video-Player-Logo-Transparent-PNG.png" type="image/x-icon" />
+</head>
+<body>
+  <header>
+    <h2>📹 Testimonial Recorder</h2>
+  </header>
+
+  <main class="main-content">
+    <div class="description">
+      <h3>Why Your Voice Matters</h3>
+      <p>Record a quick testimonial to share your thoughts, experiences, or feedback. Your words help us grow and improve.</p>
+      <ul>
+        <li>Quick and easy</li>
+        <li>Secure upload</li>
+        <li>Used only with permission</li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <h1>🎤 Record Your Testimonial</h1>
+      <p class="subtitle">Click start to begin recording. Stop to upload your video securely.</p>
+
+      <div class="video-container">
+        <video id="preview" autoplay muted></video>
+      </div>
+
+      <div class="buttons">
+        <button id="start" class="btn btn-start">🎬 Start Recording</button>
+        <button id="stop" class="btn btn-stop" disabled>⏹️ Stop & Upload</button>
+      </div>
+
+      <p id="status" class="status"></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 vansh Dalal. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

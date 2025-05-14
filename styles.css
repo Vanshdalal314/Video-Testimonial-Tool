@@ -1,0 +1,154 @@
+/* Reset & global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #edc0f1 0%, #9ec1f9 100%);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: #0d47a1;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+footer {
+  background: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto;
+}
+
+/* Layout */
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Left description */
+.description {
+  max-width: 320px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.description h3 {
+  margin-bottom: 10px;
+  color: #0d47a1;
+}
+
+.description p {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.description ul {
+  padding-left: 20px;
+  color: #444;
+}
+
+/* Video card */
+.container {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 0.6s ease;
+}
+
+h1 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  overflow: hidden;
+  border-radius: 12px;
+  border: 2px solid #ccc;
+  margin-bottom: 20px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 12px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-start {
+  background: #38b000;
+  color: white;
+}
+
+.btn-start:hover {
+  background: #2d9100;
+}
+
+.btn-stop {
+  background: #e63946;
+  color: white;
+}
+
+.btn-stop:hover {
+  background: #c9182b;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Status message */
+.status {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #0d47a1;
+  font-weight: 600;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
