@@ -51,10 +51,9 @@ A web-based tool that allows users to record and upload short video testimonials
 ### 📁 Folder Structure
 
 ```
-├── public/
-│   ├── index.html
-│   ├── styles.css
-│   └── app.js
+├──index.html
+├──styles.css
+├──app.js
 ├── uploads/
 ├── server.js
 ├── package.json
